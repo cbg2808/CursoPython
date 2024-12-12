@@ -86,6 +86,7 @@ def regenerar():
 
 
 def leer_ticket():
+    os.system("clear")
     numero_ticket = input('Ingrese ticket a consultar: ')
     with open(numero_ticket, "rb") as f:
         diccionario_tickets = pickle.load(f)
